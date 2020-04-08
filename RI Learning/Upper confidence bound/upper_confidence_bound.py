@@ -16,20 +16,30 @@ d = 10 # d is the number of columns/ads in the data
 number_of_selections = [0] * d # number_of_selections is known as Ni(n)
 sum_of_rewards = [0] * d # sum_of_rewards is known as Ri(n)
 
-ads_selected = [] #Step 3: ads_selected belong to step 3
+ads_selected = [] #Step 3: ads_selected is from step 3
 
 # Step 2:
 N=10000
 for n in range(0,N): # this for look is for the 10k indexes
+        
+        max_upper_bound = 0 # Step 3
+        
+        ad = 0 # Step 3
+        
         for i in range(0,d): # this for loop is for the 10 ads that exist
+                
                 average_reward = sum_of_rewards[i]/number_of_selections[i] # average_reward is ri(n)
+                
                 delta_i = math.sqrt ( 3/2 *  math.log(n+1)/number_of_selections[i]) # delta_i is delta symbol Δ(n) = sqrt( 3/2 * log(n)/number_of_selections[i] )
                 # n+1 is because the data starts from 1 and here n was 0 so thats why 1 was added
+                
                 upper_bound = average_reward + average_reward  # upper bound is ri(n)+Δ(n)
-# Step 3:
-
-
-# Step 4:
+                
+                if upper_bound > max_upper_bound: # Step 3
+                        
+                        max_upper_bound = upper_bound # Step 3
+                        ad = i
+        
 
 
 
