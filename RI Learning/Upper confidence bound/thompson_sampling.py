@@ -6,7 +6,7 @@ import pandas as pd
 import random
 
 # Importing the dataset
-dataset = pd.read_csv('C:\\Users\\Rizwan\\Desktop\\MachineLearning\\Machine Learning A-Z Template Folder\\Part 6 - Reinforcement Learning\\Section 33 - Thompson Sampling\\Ads_CTR_Optimisation.csv')
+dataset = pd.read_csv('Ads_CTR_Optimisation.csv')
 
 #Solving multi arm bandit problem
 #implementing Thomas Sampling
