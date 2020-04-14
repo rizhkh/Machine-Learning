@@ -6,7 +6,7 @@ import math
 ## We are optimizing the click through rates for different users for different ads
 
 # Importing the dataset
-dataset = pd.read_csv('C:\\Users\\Rizwan\\Desktop\\MachineLearning\\Machine Learning A-Z Template Folder\\Part 6 - Reinforcement Learning\\Section 32 - Upper Confidence Bound (UCB)\\Ads_CTR_Optimisation.csv')
+dataset = pd.read_csv('Ads_CTR_Optimisation.csv')
 
 #Solving multi arm bandit problem
 #implementing the upper confidence bound algorithm
