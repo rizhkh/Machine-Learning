@@ -10,7 +10,7 @@ import nltk # library for Natural Language Processing
 #Importing the dataset
 
 # helps remove everything from text except alphabet. the '^a-zA-Z' will be kept in text only, second param is the space before and after each word ,third param is the text
-dataset = pd.read_csv('C:\\Users\\Rizwan\\Desktop\\MachineLearning\\Machine Learning A-Z Template Folder\\Part 7 - Natural Language Processing\\Section 36 - Natural Language Processing\\Restaurant_Reviews.tsv',
+dataset = pd.read_csv('Restaurant_Reviews.tsv',
                       delimiter='\t' , quoting = 3) #quoting parameter is to ignore double quotes - 3 is the value to ignore double quotes in text
 
 #using nltk library and we use it to remove unimportant words (preposition words like the,that,they,is etc)
